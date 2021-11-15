@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: 16px;
+}
+
+.cabecalho{
+    background-color: #097C7D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+.cabecalho-texto{
+    color: #f2f2f2;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.caixa-conteudos{
+    background: rgb(140,63,9);
+    background: linear-gradient(90deg, rgba(140,63,9,1) 0%, rgba(168,71,11,1) 24%, rgba(185,80,15,1) 66%, rgba(140,63,9,1) 100%);
+    padding: 20px 0;
+    color: lightslategray;
+    display: flex;
+    justify-content: center;
+}
+
+.container-conteudos{
+    background-color: #fff;
+    margin: 0 20px;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+}
+
+/*menu-lateral*/
+.lista-de-navegacao-item{
+    border-bottom: 1px solid lightslategray;
+}
+
+.lista-de-navegacao-item:last-child{
+    border-bottom: unset;
+}
+
+.lista-de-navegacao-link{
+    display: block;
+    padding: 10px;
+    color: lightslategray;
+}
+
+.lista-de-navegacao-link:hover{
+    background-color: rgb(175, 192, 209);
+    color: white;
+}
+
+/*conteudos*/
+.titulo-principal{
+    font-size: 1.9em;
+    margin-bottom: 15px;
+}
+
+.paragrafo-texto{
+    margin-bottom: 20px;
+    line-height: 25px;
+    text-align: justify;
+}
+
+.formatar-imagem{
+    border: 1px solid lightslategray;
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+.charles{
+    height: 200px;
+    width: auto;
+    float: left;
+    margin-right: 15px;
+}
+
+.girafa{
+    width: 300px;
+}
+
+.img-mobile{
+    display: none;
+}
+
+.img-desktop,
+.img-mobile{
+    width: 450px;
+}
+
+.caixa-imagem-girafa{
+    display: block;
+    width: 100%;
+}
+
+@media(max-width: 1200px){
+    .menu-lateral{
+        display: none;
+    }
+}
+
+@media(max-width: 700px){
+    .img-desktop, .img-mobile{
+        width: 80%;
+    }
+}
+
+@media(max-width: 360px){
+    .img-mobile{
+        display: block;
+    }
+
+    .img-desktop{
+        display: none;
+    }
+}
+
+@media(max-width: 420px){
+    .charles{
+        float: none;
+        width: 80%;
+        height: 80%;
+    }
+
+    .girafa{
+        width: 80%;
+    }
+
+    .caixa-imagem-charles{
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+}
+
